@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Loud Volume Warning" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="Loud Volume Warning"
+        android:key="volume_warning_toggle"
+        android:defaultValue="0"
+        android:summaryOn="Volume Warning Currently Disabled"
+        android:summaryOff="Volume Warning Currently Enabled" />
+    <PreferenceCategory android:title="Mokee Listview Animations">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:persistent="true"
+            android:entries="@array/listview_animation_entries"
+            android:title="Listview animation"
+            android:key="listview_animation"
+            android:defaultValue="0"
+            android:summary="%s"
+            android:dependency="listview_animation"
+            android:entryValues="@array/listview_animation_values" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference
+            android:persistent="true"
+            android:entries="@array/listview_interpolator_entries"
+            android:title="Listview interpolator"
+            android:key="listview_interpolator"
+            android:summary="%s"
+            android:defaultValue="0"
+            android:dependency="listview_interpolator"
+            android:entryValues="@array/listview_interpolator_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

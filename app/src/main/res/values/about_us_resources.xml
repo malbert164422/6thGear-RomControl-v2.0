@@ -20,22 +20,19 @@
     <!--In this array you will put the icons for contact information,
     for example xda icon for your xda thread, site icon for your site, facebook icon and so on-->
     <array name="about_contact_us_drawables">
-        <item>@drawable/icon_2</item>
-        <item>@drawable/icon_1</item>
-        <item>@drawable/icon_3</item>
+        <item>@drawable/telegramicon</item>
+        <item>@drawable/xda</item>
     </array>
 
     <!--In this array you will put the titles for your contact info items. Keep the order consistent between all 3 arrays-->
     <string-array name="about_contact_us_text">
-        <item>Facebook</item>
-        <item>Our Site</item>
+        <item>Telegram</item>
         <item>XDA</item>
     </string-array>
 
     <!--In this array you will put the titles for the URL strings that will open once a user clicked on the item-->
     <string-array name="about_contact_us_links" translatable="false">
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
+        <item>http://forum.xda-developers.com/tmobile-galaxy-s5/development/uncarrier-t3407978</item>
         <item>http://forum.xda-developers.com/</item>
     </string-array>
 
@@ -46,43 +43,43 @@
         <item>@drawable/icon_5</item>
         <item>@drawable/icon_6</item>
         <item>@drawable/icon_1</item>
+        <item>@drawable/icon_13</item>
     </array>
     <string-array name="about_team_names">
-        <item>Master Yoda - wise and talented lead developer</item>
-        <item>Luke Skywalker - one handed theme master</item>
-        <item>Darth Vader - dark theme master</item>
+        <item>Master Mike on the track - King developer</item>
+        <item>Samsung Employer 30692- Lastest Leaks</item>
+        <item>Geris - Mod Master and good friend</item>
+        <item>Mrhelloyellow- Themer of this rom</item>
     </string-array>
     <string-array name="about_team_links" translatable="false">
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
-        <item>http://forum.xda-developers.com/</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
     </string-array>
 
 
 
     <!--Credits and thanks info arrays-->
     <array name="about_credits_drawables">
-        <item>@drawable/icon_1</item>
-        <item>@drawable/icon_3</item>
+        <item>@drawable/icon_9</item>
+        <item>@drawable/icon_0</item>
+        <item>@drawable/icon_0</item>
         <item>@drawable/icon_4</item>
-        <item>@drawable/icon_2</item>
-        <item>@drawable/icon_6</item>
-        <item>@drawable/icon_5</item>
+        <item>@drawable/icon_10</item>
+        <item>@drawable/icon_0</item>
+        <item>@drawable/icon_12</item>
     </array>
     <string-array name="about_credits_names">
-        <item>Star Trek - for being ultimately better than Star Wars</item>
-        <item>Jean-Luc Picard - for making us crave hot earl-grey tea even in the middle of the summer</item>
-        <item>Data - for running on the best rom. Google, we still are waiting for THAT android version</item>
-        <item>Janeway - for being a normal person and drinking black coffee</item>
-        <item>Q - for reminding us that you can live forever and still look great</item>
-        <item>Worf - for teaching us to love Klingons. It was NOT easy</item>
+        <item>Ben (Alliance)- for being a good buddy during the cold wars</item>
+        <item>God - All seeing all knowing</item>
+        <item>Telegram Buddies - Arma, Smurfire,Curt,Jean,Zyunia and many more</item>
+        <item>Remy - Gay-os for being a normal person and going to school</item>
+        <item>Timmah(Alliance) - He is a major buzz kill but hey BIG HEAD</item>
+        <item>Sac - for going to Java school and listening to my .....</item>
+        <item>Dax girl and W Man- for teaching us to love Andriod(not really lol)</item>
     </string-array>
     <string-array name="about_credits_links" translatable="false">
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
-        <item>http://forum.xda-developers.com/</item>
-        <item>https://www.facebook.com/</item>
-        <item>https://www.google.com/</item>
+        <item>https://www.telegram.me/RomDiscussion</item>
         <item>http://forum.xda-developers.com/</item>
     </string-array>
 </resources>

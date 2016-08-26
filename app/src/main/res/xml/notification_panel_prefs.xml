@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen android:title="Notifications Items">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/shape_entries" android:title="Notification bg shape" android:key="notification_background_form" android:defaultValue="0" android:entryValues="@array/shape_values" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Notification bg color" android:key="notification_bg_color" android:defaultValue="0" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Notification Text Color" android:key="pulldown_text" android:summary="Choose text color" android:defaultValue="-14606047" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+            hexValue="true"
+            alphaSlider="true"
+            android:defaultValue="\#ff7792a9"
+            android:key="notif_icon_bg_color"
+            android:title="Notification icons BG"/>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Brightness panel preferences">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Enable custom colors for brightness" android:key="custom_slider_colors" android:defaultValue="false" android:summaryOn="Custom color enabled" android:summaryOff="Custom color disabled" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Thumb (handle) color" android:key="brightness_slider_thumb_color" android:dependency="custom_slider_colors" android:defaultValue="\#1e4e78" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness progress bar color" android:key="brightness_slider_foreground_color" android:dependency="custom_slider_colors" android:defaultValue="\#1e4e78" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness custom bg color" android:key="brightness_bg_color" android:dependency="custom_slider_colors" android:defaultValue="\#ffe6eaed" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness checkbox color" android:key="brightness_checkbox_color" android:dependency="custom_slider_colors" android:defaultValue="\#1e4e78" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness icon color" android:key="brightness_icon_color" android:dependency="custom_slider_colors" android:defaultValue="\#1e4e78" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness text label color" android:key="brightness_label_color" android:dependency="custom_slider_colors" android:defaultValue="\#1e4e78" />
+    </PreferenceScreen>
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Expanded header background color" android:key="header_bg_color" android:summary="Select color" android:defaultValue="\#ffe6eaed" alphaSlider="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Quick Settings Panel Color" android:key="quick_settings_panel_bg_color" android:summary="Select color" android:defaultValue="\#ffe6eaed" alphaSlider="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Data Usage Panel BG" android:key="data_view_bg" android:summary="Select color" android:defaultValue="\#ffe6eaed" alphaSlider="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        hexValue="true"
+        alphaSlider="true"
+        android:defaultValue="\#ff7792a9"
+        android:key="qconnect_bg_color"
+        android:title="SoundPanel Path Colors"/>
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        hexValue="true"
+        android:defaultValue="\#ff7792a9"
+        android:key="toggle_text_color"
+        android:title="SoundPanel Path Colors"/>
+    <PreferenceScreen android:title="Notification Background Image">
+        <com.wubydax.romcontrol.v2.prefs.UriSelectionPreference android:title="Select Image" android:key="notification_panel_bg" android:dependency="enable_custom_bg" />
+        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference android:title="Image opacity" android:key="notification_panel_alpha" android:dependency="enable_custom_bg" android:defaultValue="255" app:minValue="0" app:maxValue="255" app:unitsValue="%" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom Background" android:key="enable_custom_bg" android:defaultValue="true" android:summaryOn="Custom bg enabled" android:summaryOff="Custom bg disabled" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Data Usage view preferences">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Data usage view visibility" android:key="data_usage_visibility" android:defaultValue="true" android:summaryOn="Shown" android:summaryOff="Hidden" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Data usage text color" android:key="data_usage_text_color" android:dependency="data_usage_visibility" android:defaultValue="\#e61e4e78" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/data_usage_gravity_entries" android:title="Data usage text gravity" android:key="data_usage_text_gravity" android:dependency="data_usage_visibility" android:defaultValue="0" android:entryValues="@array/data_usage_gravity_values" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/data_usage_text_style_entries" android:title="Data usage text style" android:key="data_usage_view_text_style" android:dependency="data_usage_visibility" android:defaultValue="0" android:entryValues="@array/data_usage_text_style_values" />
+    </PreferenceCategory>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="On/Off Theme related colors" android:key="switch_colors" android:summaryOn="Samsung Themes colors dont work" android:summaryOff="Samsung Theme colors work" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:dependency="switch_colors" android:title="QuickConnect color" android:key="quickconnect_color" android:summary="Choose color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Show memCleanView" android:key="pekaka_memCleanView" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Memkiller color" android:key="db_inkeffect_pekaka_memkiller_picker" android:defaultValue="\#ff2aff00" alphaSlider="true" hexValue="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        android:title="Clock Color"
+        android:key="pulldown_clock_color"
+        android:defaultValue="-9597786"
+        hexValue="true"
+        alphaSlider="true"
+        android:summary="Change pulldown clock color" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        android:title="Date Color"
+        android:key="pulldown_date_color"
+        android:defaultValue="-9597786"
+        hexValue="true"
+        alphaSlider="true"
+        android:summary="Choose date color in pulldown" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        android:title="Settings Button Color"
+        android:key="pulldown_button_color"
+        android:defaultValue="-13476476"
+        hexValue="true"
+        alphaSlider="true"
+        android:summary="Choose color to apply" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        android:title="Settings Divider Color"
+        android:key="header_divider_color"
+        android:defaultValue="-13476476"
+        hexValue="true"
+        alphaSlider="true"
+        android:summary="Choose color to apply" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
+        android:title="Toggle Text Color"
+        android:key="toggle_text_color"
+        android:defaultValue="-13476476"
+        hexValue="true"
+        alphaSlider="false"
+        android:summary="Set text color" />
+   </PreferenceScreen>
